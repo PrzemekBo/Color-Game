@@ -17,8 +17,8 @@ for (var i=0;i<squares.length;i++ ) {
             chaneColors(clickColor);
             h1.style.background=clickColor;
         }else {
-           this.style.background="#232323";
-           messageDisplay.textContent="Try Again";
+            this.style.background="#232323";
+            messageDisplay.textContent="Try Again";
         }
     });
 }
@@ -28,13 +28,13 @@ function chaneColors(color) {
         squares[i].style.background=color;
 
     }
-    
+
 }
 
 function pickColor() {
-   var random= Math.floor(Math.random()*colors.length);
-   return colors[random];
-    
+    var random= Math.floor(Math.random()*colors.length);
+    return colors[random];
+
 }
 
 function generateRandomColors(num) {
@@ -43,7 +43,7 @@ function generateRandomColors(num) {
         arr.push(randomColor())
 
 
-       
+
     }
     return arr;
 }
